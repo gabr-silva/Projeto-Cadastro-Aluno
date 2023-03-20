@@ -10,4 +10,4 @@ app.use (express.json);
 //criação do servidor HTTP
 app.listen(3000, ()=>{
     console.log('servidor em teste');
-});git
+})
