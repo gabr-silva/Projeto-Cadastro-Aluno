@@ -1,0 +1,23 @@
+{
+  "name": "projeto-cadastro-aluno",
+  "version": "1.0.0",
+  "description": "projeto de PW2",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "cadastro",
+    "aluno",
+    "PW2",
+    "ETEC"
+  ],
+  "author": "Gabriel V",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}

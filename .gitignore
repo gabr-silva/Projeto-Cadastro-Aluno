@@ -1,0 +1,5 @@
+# Ignore a pasta node_modules
+node_modules
+
+#  ignorar o readme
+README.md
