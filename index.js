@@ -10,11 +10,11 @@ app.use (express.json());
 app.use(express.urlencoded({extended:true}));
 
 /*  Criação das rotas de aluno */
-const alunoController = require('./controller/alunoController');
-app.use('/', alunoController);
+const cursoController = require('./controller/cursoController');
+app.use('/', cursoController);
 
 
 //criação do servidor HTTP
 app.listen(3000, ()=>{
-    console.log('servidor em funcionamento rota: http://localhost:3000');
+    console.log('servidor em funcionamento! rota: http://localhost:3000');
 })
