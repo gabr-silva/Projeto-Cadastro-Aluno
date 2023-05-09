@@ -13,19 +13,19 @@ const curso = conexao.define(
         },
         periodo:{
             type: sequelize.STRING,
-            allowNull: false
+            allowNull: false,
         },
         qtdeAluno:{
             type:sequelize.INTEGER,
             allowNull: false
         },
         modulo:{
-            type:sequelize.INTEGER,
+            type:sequelize.STRING,
             allowNull: false
         }
     }
 );
 
-curso.sync({force:true});
+// curso.sync({force:true});
 
 module.exports = curso;
