@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "1f054616-89c4-47f8-8a50-989d521e0f57",
+		"name": "PW2-Cadastro aluno",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26212250"
+	},
+	"item": [
+		{
+			"name": "curso",
+			"item": [
+				{
+					"name": "selecionar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_base}}/curso/selecionar",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"curso",
+								"selecionar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Desenvolvimento de sistema\",\r\n    \"periodo\": \"noturno\",\r\n    \"qtdeAluno\": 30,\r\n    \"modulo\": \"1DS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_base}}/curso/inserir",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"curso",
+								"inserir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"nome\": \"Recursos Humanos\",\r\n    \"modulo\": \"1RH\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_base}}/curso/alterar",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"curso",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url_base}}/curso/excluir/3",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"curso",
+								"excluir",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -9,7 +9,7 @@ const curso = conexao.define(
     {
         nome:{
             type: sequelize.STRING,
-            allowNull: false
+            allowNull: false,
         },
         periodo:{
             type: sequelize.STRING,
@@ -26,6 +26,6 @@ const curso = conexao.define(
     }
 );
 
-// curso.sync({force:true});
+//curso.sync({force:true});
 
 module.exports = curso;
